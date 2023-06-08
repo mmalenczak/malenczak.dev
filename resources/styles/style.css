@@ -1,0 +1,91 @@
+/* Color scheme:
+#000807
+#93A3B1
+#7C898B
+#F4EBBE
+#F3FFC6 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000807 ;
+  color: #F3FFC6;
+}
+
+header {
+  text-align: center;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: right;
+}
+
+nav li {
+  padding: 20px;
+  border-bottom: 1px solid #F3FFC6;
+  width: 120px;
+  transition: 350ms ease-in-out;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #F3FFC6;
+  color: #000807
+}
+
+@media only screen and (max-width: 1010px) {
+  
+  header {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+  header h1 {
+    text-align: center;
+    font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+}
+
+main {
+  width: 100%;
+}
+
+#hero-banner {
+  background-image: url(../images/hero-background.jpg);
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+}

@@ -24,11 +24,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5vh;
+  /* margin-bottom: 5vh; */
   background-color: #FFFFFF;
   position: sticky;
   top: 0px;
-  border-bottom: 5px #E61919 solid;
+  border-bottom: 4px #E61919 solid;
 }
 
 header img {
@@ -45,7 +45,7 @@ header h1 {
   text-align: left;
 }
 
-header h1 span {
+.textAccent {
   color: #E61919;
 }
 
@@ -73,20 +73,20 @@ nav a {
 
 nav li:hover {
   background-color: #404040;
-  color: #BFBFBF;
-  border: 3px solid #E61919;
+  color: #FFFFFF;
+  border: 2px solid #E61919;
   box-shadow: 5px 5px rgba(64, 64, 64, 0.5);
 }
 
 header img:hover {
-  border: 3px solid #E61919;
+  border: 2px solid #E61919;
   box-shadow: 5px 5px rgba(64, 64, 64, 0.5);
 }
 
 .activePage {
   background-color: #404040;
   color: #BFBFBF;
-  border: 3px solid #E61919;
+  border: 2px solid #E61919;
   box-shadow: 5px 5px rgba(64, 64, 64, 0.5);
 }
 
@@ -107,24 +107,88 @@ header img:hover {
 main {
   width: 95%;
   margin: 0 auto;
-  min-height: 250px;
-  border: 1px #F3FFC6 solid;
+  background-color: #BFBFBF;
 }
 
 #imageContainer {
+  background-image: url(../images/hero-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: auto;
-  min-height: 250px;
-  background-image: url(../images/hero-background.jpg);
-  text-align: center;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#imageContainer h2 {
+  background-color: #FFFFFFe6;
 }
 
 main h2 {
+  color: #000000;
   width: 100%;
-  background-color: #2A2F2F;
-  padding: 20px 0;
+  height: 100%;
+  padding: 50px;
+  letter-spacing: 1px;
+  text-align: center;
   font-size: 2rem;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+#aboutMe {
+  margin-bottom: 50px;
+}
+
+#aboutMeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+}
+
+#aboutMeContainer img {
+  max-width: 450px;
+  width: 40%;
+  border: #404040 2px solid;
+}
+
+#aboutMeParagraph {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#aboutMeParagraph p {
+  margin-bottom: 2rem;
+}
+
+.buttonPrimary {
+  background-color: #404040;
+  color: #FFFFFF;
+  border: 2px solid #E61919;
+  box-shadow: 5px 5px rgba(64, 64, 64, 0.5);
+  padding: 10px 5px;
+  width: 130px;
+  transition: 350ms ease-in-out;
+  border-radius: 5px;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  font-size: 0.9rem;
+}
+
+#aboutMeParagraph a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.buttonPrimary:hover {
+  box-shadow: 5px 5px transparent;
 }

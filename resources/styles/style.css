@@ -36,7 +36,7 @@ header img {
   height: 100px;
   border-radius: 50%;
   box-sizing: content-box;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   transition: 350ms ease-in-out;
 }
 
@@ -61,7 +61,7 @@ nav li {
   transition: 350ms ease-in-out;
   margin: 10px;
   border-radius: 5px;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
 }
 
 nav a {
@@ -121,7 +121,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 #imageContainer h2 {
@@ -142,15 +142,11 @@ main p {
   font-size: 1.2rem;
 }
 
-#aboutMe {
-  margin-bottom: 50px;
-}
-
 #aboutMeContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 5px;
+  padding-bottom: 25px;
 }
 
 #aboutMeContainer img {
@@ -167,7 +163,7 @@ main p {
 }
 
 #aboutMeParagraph p {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .buttonPrimary {
@@ -189,6 +185,61 @@ main p {
   color: #FFFFFF;
 }
 
+#aboutMeParagraph button {
+  margin-bottom: 3rem;
+}
+
 .buttonPrimary:hover {
   box-shadow: 5px 5px transparent;
+}
+
+#myPortfolio {
+  width: 100%;
+  background-color: hsla(0, 0%, 25%, 0.25);
+  padding: 50px, 0;
+  /* margin-bottom: 50px; */
+}
+
+#myPortfolio a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#myPorfolioContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
+
+#myPorfolioContainer a {
+  width: 30%;
+  height: 30vh;
+  background-size: cover;
+  border: #404040 2px solid;
+  box-shadow: 5px 5px rgba(64, 64, 64, 0.5);
+  transition: 350ms ease-in-out;
+}
+
+#myPorfolioContainer a:hover {
+  color: #E61919;
+  box-shadow: 5px 5px transparent;
+  border: #E61919 2px solid;
+}
+
+#project1 {
+  background-image: url(../images/spreadsheet-g7d23d4b6e_640.jpg);
+}
+
+#project2 {
+  background-image: url(../images/pexels-pixabay-274937.jpg);
+}
+
+#project3 {
+  background-image: url(../images/pexels-cottonbro-studio-5474300.jpg);
+  
+}
+
+#myPorfolioContainer h3 {
+  padding: 25px;
 }

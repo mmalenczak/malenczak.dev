@@ -139,7 +139,7 @@ main h2 {
 }
 
 main p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 #aboutMeContainer {
@@ -193,6 +193,26 @@ main p {
   box-shadow: 5px 5px transparent;
 }
 
+@media only screen and (max-width: 680px) {
+
+  #aboutMeContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #aboutMeContainer img {
+    width: 75%;
+    margin-bottom: 25px;
+  }
+
+  #aboutMeParagraph {
+    text-align: center;
+    width: 75%;
+  }
+
+}
+
 #myPortfolio {
   width: 100%;
   background-color: hsla(0, 0%, 25%, 0.25);
@@ -215,10 +235,12 @@ main p {
 #myPorfolioContainer a {
   width: 30%;
   height: 30vh;
+  min-width: 350px;
   background-size: cover;
   border: #404040 2px solid;
   box-shadow: 5px 5px rgba(64, 64, 64, 0.5);
   transition: 350ms ease-in-out;
+  margin: 25px;
 }
 
 #myPorfolioContainer a:hover {
@@ -242,4 +264,60 @@ main p {
 
 #myPorfolioContainer h3 {
   padding: 25px;
+}
+
+#contactMe {
+  padding-bottom: 50px;
+}
+
+#contactMeContainer {
+  display: flex;
+  justify-content: center;
+  padding: 0 25px;
+}
+
+#contactMeContainer img {
+  width: 150px;
+  max-height: 150px;
+}
+
+#contactMeContainer p {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#contactMeParagraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+footer {
+  padding: 20px 50px;
+  min-height: 150px;
+  border-top: #E61919 4px solid;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+#footerContainer {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 620px) {
+
+  #footerContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footerContainer p {
+    margin-top: 25px;
+  }
+
 }

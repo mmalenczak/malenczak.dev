@@ -180,7 +180,7 @@ main p {
   font-size: 0.9rem;
 }
 
-#aboutMeParagraph a {
+.buttonPrimary a {
   text-decoration: none;
   color: #FFFFFF;
 }
